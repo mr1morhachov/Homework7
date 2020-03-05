@@ -1,0 +1,19 @@
+<div class='cart-item'>   <img class="pizza-icon" id='half_photo' src="<%= pizza.icon %>" alt="Pizza">
+    <div class='cart-title'> <%= pizza.title %> <% if(( size ) == 'big_size') { %>
+        L  <% } else { %> S <% } %>
+    </div>
+    <div> <img src='assets/images/size-icon.svg'>
+        <span class='option-numbers'>30</span> 
+        <img src='assets/images/weight.svg'> 
+        <span class='option-numbers'>385</span> 
+    </div>
+    <div class = 'cart-panel'>
+        <span class='cart-price'> <span class='cash'> 
+            <%= pizza[size].price %> </span> грн.</span>
+        <div class='cart-buttons'> <button class="button button-minus">-</button>
+            <span class="cart-number"><%= quantity %></span>
+            <button class="button button-plus">+</button>
+        </div>
+        <button class='button button-cancel'>x</button>
+    </div>
+            </div>

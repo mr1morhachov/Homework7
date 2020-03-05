@@ -1,0 +1,508 @@
+.main {
+    display: flex;
+}
+
+#main {
+    padding: auto;
+}
+
+#cart {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    height:	100%;
+    width:	300px;
+    background-color: #F5F5F5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.cart-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #F5F5F5;
+    align-items: center;
+}
+
+#cart-list {
+    margin-top:80px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.cart-bottom {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    .main-title {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: center;
+    }
+    
+    .panel-buttons {
+        
+    }
+}
+
+.container {
+    min-width: 590px;
+}
+
+.cart-item {
+    #half_photo {
+        max-width: 110px;
+        float:right;
+        width: 55px;
+        height: 110px;
+        object-fit: cover;
+        object-position: 0% 0;
+        
+    }
+    
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    height: 120px;
+    
+    .cart-title {
+        font-size: 1.2em;
+        font-weight: 570;
+        color: @mainColor;
+        margin-bottom: 10px;
+    }
+    
+    .cart-panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 10px;
+    }
+    
+    .cart-price {
+        font-weight: 550;
+    }
+    
+    .cart-number {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .cart-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .button {
+        width: 20px;
+        height: 20px; 
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 3px;
+        padding-top: 0px;
+        text-align: center;
+        font-size:0.9em;
+    }
+    
+    .button-minus {
+    background: #CD5C5C;
+    margin-right: 5px;
+    color: white;
+
+}
+
+.button-plus {
+    background: #98FB98;
+    margin-left: 5px;
+    color: white;
+
+}
+    
+.button-cancel {
+    background: #F0F8FF;
+    color: @mainColor;
+    font-weight: 550;
+
+}
+  
+}
+
+//FOOTER
+.footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: gainsboro;
+    color: snow;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    height: 80px;
+    width: 100%;
+}
+
+.autopos {
+    margin-top: 12px;
+}
+
+//UPPER PART
+//UPPER PART
+.upper {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    flex-direction: row;
+    top:	0px;
+    width:	100%;
+    padding-right: @defwidth;
+    color: gainsboro;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.upper-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.upper-p1 {
+    border-bottom: 1px solid grey;
+    display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 126px;
+}
+
+.upper-p2 {
+   color: white;
+    font-size: 1.3em;
+    font-weight: 520;
+    height: 28px;
+}
+
+
+.widthmax {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 100%;
+}
+
+//Buttons
+    #button-orange {
+        margin-top: 0px;
+        background-color: @mainColor;
+        border-color: darken(@mainColor, 6%);
+        margin-bottom: 3px;
+    }
+
+    #button-reverse {
+        background-color: white;
+        color: @mainColor;
+        border: 0px solid black;
+        margin-bottom: 3px;
+    }
+
+    #button-white {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        background-color: #F5F5F5;
+        color: white;
+        border-color: #F5F5F5;
+        margin-bottom: 3px;
+    }
+
+    #large {
+        width: 90%;
+    }
+
+.login2 {
+    position: absolute;
+    right: 310px;
+    visibility: hidden;
+    margin-top: 5px;
+}
+
+#button-buy {
+        background-color: @mainColor;
+        border-color: darken(@mainColor, 6%);
+        margin-bottom: 3px;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0.4;
+}
+
+.enter {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 35px;
+}
+
+.empty {
+    display:block;
+    width: 510px;
+    height: 100px;
+    background-color: red;
+}
+
+.container {
+    
+}
+
+.row {
+    margin-right: @defwidth;
+}
+
+.column {
+    margin-right: @defwidth;
+}
+
+.caption {
+    .row {
+        margin-right: 0;
+    }
+    .column {
+    margin-right: 0;
+}
+}
+
+.board {
+    padding-top: 180px;
+    width: 100%;
+}
+
+
+.badge-original{
+    position: relative;
+    left: 50px;
+    background-color: #ED8442;
+    color: white;
+    min-width: 91px;
+    height: 90px;
+}
+
+#type1 {
+    position: fixed;
+    height: 140px;
+    bottom:	0px;
+    left:	50px;
+    min-width: 90px;
+    img {
+        position: absolute;
+        top: -10px;
+        width: 90px;
+    }
+    
+}
+
+#type2 {
+    .text-center {
+        width: 45px;
+        height: 60px;
+    }
+    img {
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: -9px;
+        width: 90px;
+    }
+}
+
+//Text formats
+.text-center {
+    position:absolute;
+    width: 45px;
+    height: 105px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.1em;
+    font-weight: 550;
+}
+
+.text-type1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: gainsboro;
+    font-size: 1.15em;
+    margin-right: 10px;
+    }
+
+.text-type2 {
+    font-size: 1.4em;
+    font-weight: 550;
+    }
+
+.text-price2 {
+        font-size: 1.4em;
+        font-weight: 600;
+        margin-left: auto;
+    }
+
+.orange-icon {
+    border-radius: 11px;
+    background:@mainColor;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.togeth{
+        display: flex;
+        flex-direction: row;
+        height:30px;
+        margin-left: 10px;
+    }
+
+.pizza-card {
+    min-width: 247px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  img {
+    max-width: 240px;
+  }
+
+  h3 {
+      font-weight: 700;
+      color: @mainColor;
+    //background-color: lighten(@mainColor, 45%);
+  }
+    
+    h4 {
+        color: lightgray;
+        margin: 0px;
+        font-size: 1.20em;
+    }
+    
+    .description {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.92em;
+        color: black;
+    }
+    
+    .text-price {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+    }
+    
+    #pizza_list {
+        
+    }
+    
+    #options_info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .option-numbers {
+        font-size: 1.0em;
+        margin-left: 3px;
+        color: black;
+    }
+    
+    .text-currency {
+        font-size: 0.9em;
+        font-weight: 600;
+        color: black;
+    }
+    
+    #column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #space_around {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    
+    #tag1 {
+        position: absolute;
+        top: -5px;
+        right: 10px;
+        padding: 5px;
+    }
+}
+
+
+#button-reverse:focus {
+    background-color: @mainColor;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    #three {
+        display:none;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 970px) {
+    #two {
+        display:none;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 750px) {
+    #one {
+        display:none;
+    }
+    
+    .login1 {
+        display: none;
+    }
+    
+    .login2 {
+        visibility: visible;
+        right: auto;
+        left: auto;
+    }
+    
+    
+}

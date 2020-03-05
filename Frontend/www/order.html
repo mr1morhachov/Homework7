@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Order</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+<body>
+    
+        <div class="container" id="main">
+        <div class="data" id="text-title"> 1. Контактні дані </div>
+            <div class="row" id="block">
+                <div class="col-xs-4 textname"><span id="text-type1">Ім'я</span></div>
+                <div class="col-xs-8" id="left-align">
+                    <input class ="searchbar nameorder" type="text" placeholder="  Ім'я Призвіще" value ="">
+                    <span class="warnname" id="text-warning"> Введіть власне тільке власне ім'я, без цифр </span>
+                </div>
+            </div>
+            <div class="row" id="block">
+                <div class="col-xs-4 textnumber"><span id="text-type1">Телефон</span></div>
+                <div class="col-xs-8" id="left-align">
+                    <input class ="searchbar numberorder" type="text" placeholder="  +380953221337 / 0953221337" value ="">
+                    <span class="warnnumber" id="text-warning"> Введіть номер телефону у форматі +380 або почніть з 0 </span>
+                </div>
+            </div>
+            <div class="row" id="block">
+                <div class="col-xs-4 textaddress" texraddress><span id="text-type1">Адреса</span></div>
+                <div class="col-xs-8" id="left-align">
+                    <input class ="searchbar addressorder" type="text" placeholder="  Київ, вул. Червоноткацька, 4а" value ="">
+                    <span class="warnaddress" id="text-warning"> Введіть адресу </span>
+                </div>
+            </div>
+            
+            <div class="delivery-box"> 
+            <div id="text-title11">Інформація про замовлення</div>
+            <div id="text-type11">Приблизний час доставки: <span> невідомий </span></div>
+            <div>Адреса доставки: <span> невідома </span></div>
+        </div>
+        <button id="button-orange2"> Далі > </button>
+        <div class="hiddenblock"> </div>
+    </div>
+    
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--Own JavaScript -->
+<script type="text/javascript"  src="assets/js/main.js"> </script>
+</body>
+</html>

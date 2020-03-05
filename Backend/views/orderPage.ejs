@@ -1,0 +1,44 @@
+<% include common/header.ejs %>
+<% booleanich = false; %>
+
+<div class="board2" id="main">
+    <div class="test">
+        <div class="data" id="text-title11"> 1. Контактні дані </div>
+            <div class="row" id="block">
+                <div class="col-xs-4 textname"><span id="text-type11">Ім'я</span></div>
+                <div class="col-xs-8" id="left-align">
+                    <input class ="searchbar nameorder" type="text" placeholder="  Ім'я Призвіще" value ="">
+                    <span class="warnname" id="text-warning"> Введіть власне тільке власне ім'я, без цифр </span>
+                </div>
+            </div>
+            <div class="row" id="block">
+                <div class="col-xs-4 textnumber"><span id="text-type11">Телефон</span></div>
+                <div class="col-xs-8" id="left-align">
+                    <input class ="searchbar numberorder" type="text" placeholder="  +380953221337 / 0953221337" value ="">
+                    <span class="warnnumber" id="text-warning"> Введіть номер телефону у форматі +380 або почніть з 0 </span>
+                </div>
+            </div>
+            <div class="row" id="block">
+                <div class="col-xs-4 textaddress" texraddress><span id="text-type11">Адреса</span></div>
+                <div class="col-xs-8" id="left-align">
+                    <input class ="searchbar addressorder" type="text" placeholder="  Київ, вул. Червоноткацька, 4а" value ="">
+                    <span class="warnaddress" id="text-warning"> Введіть адресу </span>
+                </div>
+            <div class="row" id="block">
+                  <button class="button orange2 show-hide"> Click for Map</button>
+                <div id="map"></div>
+            </div>
+            </div>
+        <div class="delivery-box"> 
+            <div id="text-title11">Інформація про замовлення</div>
+            <div>Приблизний час доставки: <div id="chas"> невідомий </div></div>
+            <div>Адреса доставки: <div id="adresa"> невідома </div></div>
+        </div>
+        <button class="next" id="button-orange2"> Далі > </button>
+        <div class="hiddenblock"> </div>
+    </div>
+    <div cart-test></div>
+<% include common/right.ejs %>
+    </div>
+
+<% include common/footer.ejs %>
